@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <setting name="jdbcTypeForNull" value="NULL"/>
+    </settings>
+
+    <typeAliases>
+        <typeAlias alias="OrderHeader" type="com.inspien.eai.domain.OrderHeader"/>
+        <typeAlias alias="OrderItem" type="com.inspien.eai.domain.OrderItem"/>
+        <typeAlias alias="Shipment" type="com.inspien.eai.domain.Shipment"/>
+    </typeAliases>
+
+    <mappers>
+        <mapper resource="mapper/order-mapper.xml"/>
+        <mapper resource="mapper/shipment-mapper.xml"/>
+    </mappers>
+
+</configuration>

@@ -1,0 +1,40 @@
+  plugins {
+    java
+    application
+  }
+    
+    group = "com.inspien"
+    version = "1.0.0"
+    
+    java {
+    toolchain {
+    languageVersion.set(JavaLanguageVersion.of(17))
+    }
+  }
+    
+    repositories {
+    mavenCentral()
+  }
+    
+    dependencies {
+
+    // Oracle JDBC
+    implementation("com.oracle.database.jdbc:ojdbc8:19.8.0.0")
+
+    // MyBatis
+    implementation("org.mybatis:mybatis:3.5.13")
+
+    // SFTP
+    implementation("com.jcraft:jsch:0.1.55")
+
+    // XML Parsing
+    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.15.3")
+
+    // Logging
+    implementation("ch.qos.logback:logback-classic:1.4.14")
+    implementation("org.slf4j:slf4j-api:2.0.9")
+  }
+    
+    application {
+    mainClass.set("com.inspien.eai.Application")
+  }
