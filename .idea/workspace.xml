@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b329dc17-565c-451d-a066-2207a47b710f" name="Changes" comment="DB,SFTP 연결 테스트">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/inspien/eai/config/MyBatisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/order-mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/shipment-mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+    <list default="true" id="b329dc17-565c-451d-a066-2207a47b710f" name="Changes" comment="상수 및 환경설정 값 정리(APPLICANT_KEY, SFTP/DB 정보)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/inspien/eai/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/inspien/eai/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/inspien/eai/config/MyBatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/inspien/eai/config/MyBatisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/order-mapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/shipment-mapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/OracleConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/OracleConnectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/OracleConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OracleConnectionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,27 +73,34 @@
     &quot;accountId&quot;: &quot;960bf96b-5edb-4a68-9b76-442101826d80&quot;
   }
 }</component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="39C0SdRh6ahEnzV1YS8a8SfKxrH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.inspien-eai [:MyBatisConnectionTest.main()].executor": "Run",
-    "Gradle.inspien-eai [:com.inspien.eai.MyBatisConnectionTest.main()].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.inspien-eai [:MyBatisConnectionTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.inspien-eai [:com.inspien.eai.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.inspien-eai [:com.inspien.eai.MyBatisConnectionTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.inspien-eai [:com.inspien.eai.controller.OrderController.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\project\inspien-eai\src\main\resources\mapper" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -118,12 +126,30 @@
       <option name="project" value="LOCAL" />
       <updated>1770133375522</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Commit1 : Mybatis/로그 기본설정">
+      <option name="closed" value="true" />
+      <created>1770200787034</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1770200787034</updated>
+    </task>
+    <task id="LOCAL-00004" summary="상수 및 환경설정 값 정리(APPLICANT_KEY, SFTP/DB 정보)">
+      <option name="closed" value="true" />
+      <created>1770320502541</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1770320502541</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="project setup" />
     <MESSAGE value="DB,SFTP 연결 테스트" />
-    <option name="LAST_COMMIT_MESSAGE" value="DB,SFTP 연결 테스트" />
+    <MESSAGE value="Commit1 : Mybatis/로그 기본설정" />
+    <MESSAGE value="상수 및 환경설정 값 정리(APPLICANT_KEY, SFTP/DB 정보)" />
+    <option name="LAST_COMMIT_MESSAGE" value="상수 및 환경설정 값 정리(APPLICANT_KEY, SFTP/DB 정보)" />
   </component>
 </project>
