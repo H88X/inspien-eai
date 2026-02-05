@@ -6,7 +6,6 @@ import java.sql.ResultSet;
 
 public class OracleConnectionTest {
 
-    // 접속 정보 (과제에서 제공된 값)
     private static final String URL = "jdbc:oracle:thin:@211.106.171.36:11527:POS";
     private static final String USER = "APPLICANT";
     private static final String PASSWORD = "inspien00";
