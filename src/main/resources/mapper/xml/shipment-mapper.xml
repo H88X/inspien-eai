@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.inspien.eai.mapper.ShipmentMapper">
+
+    <!-- K로 시작하는 최대 SHIPMENT_ID 조회 -->
+    <select id="selectMaxShipmentId" parameterType="string" resultType="string">
+        SELECT MAX(SHIPMENT_ID)
+        FROM SHIPMENT_TB
+        WHERE APPLICANT_KEY = #{applicantKey}
+            AND SHIPMENT_ID LIKE 'K%'
+    </select>
+
+    <insert id="insertShipment" parameterType="com.inspien.eai.domain.ShipmentEntity">
+        INSERT INTO SHIPMENT_TB (
+            SHIPMENT_ID,
+            ORDER_ID,
+            ITEM_ID,
+            APPLICANT_KEY,
+            ADDRESS,
+            COMPANY_CHECK_COLUMN
+        ) VALUES (
+            #{shipmentId},
+            #{orderId},
+            #{itemId},
+            #{applicantKey},
+            #{address},
+            SYSDATE
+        )
+    </insert>
+
+    <!-- SHIPMENT 적재 성공건에 대해 ORDER_TB 상태 Y로 업데이트 -->
+    <update id="updateOrderStatus">
+        UPDATE ORDER_TB
+        SET STATUS = 'Y'
+        WHERE ORDER_ID = #{orderId}
+            AND APPLICANT_KEY = #{applicantKey}
+            AND STATUS = 'N'
+    </update>
+
+</mapper>

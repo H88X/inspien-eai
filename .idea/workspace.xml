@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b329dc17-565c-451d-a066-2207a47b710f" name="Changes" comment="상수 및 환경설정 값 정리(APPLICANT_KEY, SFTP/DB 정보)">
+    <list default="true" id="b329dc17-565c-451d-a066-2207a47b710f" name="Changes" comment="DB 연결 테스트 코드 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/inspien/eai/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/inspien/eai/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/inspien/eai/config/MyBatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/inspien/eai/config/MyBatisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/order-mapper.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/shipment-mapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/OracleConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/OracleConnectionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/OracleConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OracleConnectionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +68,9 @@
     &quot;accountId&quot;: &quot;960bf96b-5edb-4a68-9b76-442101826d80&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -142,7 +140,31 @@
       <option name="project" value="LOCAL" />
       <updated>1770320502541</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="로깅 설정 추가">
+      <option name="closed" value="true" />
+      <created>1770320639419</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1770320639419</updated>
+    </task>
+    <task id="LOCAL-00006" summary="MyBatis 설정 및 Mapper 인터페이스 추가">
+      <option name="closed" value="true" />
+      <created>1770320767498</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1770320767498</updated>
+    </task>
+    <task id="LOCAL-00007" summary="DB 연결 테스트 코드 추가">
+      <option name="closed" value="true" />
+      <created>1770320858178</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1770320858178</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -150,6 +172,9 @@
     <MESSAGE value="DB,SFTP 연결 테스트" />
     <MESSAGE value="Commit1 : Mybatis/로그 기본설정" />
     <MESSAGE value="상수 및 환경설정 값 정리(APPLICANT_KEY, SFTP/DB 정보)" />
-    <option name="LAST_COMMIT_MESSAGE" value="상수 및 환경설정 값 정리(APPLICANT_KEY, SFTP/DB 정보)" />
+    <MESSAGE value="로깅 설정 추가" />
+    <MESSAGE value="MyBatis 설정 및 Mapper 인터페이스 추가" />
+    <MESSAGE value="DB 연결 테스트 코드 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="DB 연결 테스트 코드 추가" />
   </component>
 </project>
