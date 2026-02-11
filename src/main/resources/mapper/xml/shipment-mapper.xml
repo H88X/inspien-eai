@@ -9,8 +9,7 @@
     <select id="selectMaxShipmentId" parameterType="string" resultType="string">
         SELECT MAX(SHIPMENT_ID)
         FROM SHIPMENT_TB
-        WHERE APPLICANT_KEY = #{applicantKey}
-            AND SHIPMENT_ID LIKE 'K%'
+        WHERE SHIPMENT_ID LIKE 'K%'
     </select>
 
     <insert id="insertShipment" parameterType="com.inspien.eai.domain.ShipmentEntity">
